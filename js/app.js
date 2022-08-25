@@ -14,7 +14,7 @@ let botonNacimiento = document.getElementById("btnFechaNacimiento");
 let formularioElementos = document.getElementById("formElementos");
 let fecNac = document.getElementById("fecNac");
 
-fecNac.addEventListener("blur", fechaNacimiento);
+botonNacimiento.addEventListener("click", fechaNacimiento);
 formularioElementos.addEventListener("change", formElementos);
 
 //se vienen las funciones
