@@ -1,3 +1,6 @@
+import {validarElemento} from "./validaciones.js"
+import {agregarTexto} from "./textosAgregados.js"
+
 let aries = document.getElementById("aries");
 let tauro = document.getElementById("tauro");
 let geminis = document.getElementById("geminis");
@@ -13,9 +16,14 @@ let piscis = document.getElementById("piscis");
 let botonNacimiento = document.getElementById("btnFechaNacimiento");
 let formularioElementos = document.getElementById("formElementos");
 let fecNac = document.getElementById("fecNac");
+let elementos = document.getElementById("elementos");
+
 
 botonNacimiento.addEventListener("click", fechaNacimiento);
-formularioElementos.addEventListener("change", formElementos);
+elementos.addEventListener("change",()=>{validarElemento(elementos)});
+elementos.addEventListener("click",()=>{agregarTexto(formularioElementos)});
+
+
 
 //se vienen las funciones
 // Aries (21 de marzo al 19 de abril)
