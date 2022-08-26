@@ -75,3 +75,4 @@ export function agregarTexto(){
         sectionPadre.prepend(parrafoAire);
     }
 }
+
