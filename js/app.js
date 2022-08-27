@@ -21,7 +21,7 @@ let elementos = document.getElementById("elementos");
 
 botonNacimiento.addEventListener("click", fechaNacimiento);
 elementos.addEventListener("change",()=>{validarElemento(elementos)});
-elementos.addEventListener("click",()=>{agregarTexto(formularioElementos)});
+elementos.addEventListener("change",()=>{agregarTexto(formularioElementos)});
 
 
 
@@ -45,13 +45,11 @@ function fechaNacimiento(e){
     let fechita = fecNac.value;
     console.log(fechita);
 
-    let fechas = fechita.split("-", 3);
+    let fechas = fechita.split("-", 3); 
     console.log(fechas);
 
     let mes = fechas[1];
     let dia = parseInt(fechas[2]);
-
-
     switch(mes){
         case "01":
             if(dia<=19){
@@ -138,10 +136,5 @@ function fechaNacimiento(e){
             }
         break;
     }
-
-
-
-
-
 }
 
