@@ -21,7 +21,7 @@ let elementos = document.getElementById("elementos");
 
 botonNacimiento.addEventListener("click", fechaNacimiento);
 elementos.addEventListener("change",()=>{validarElemento(elementos)});
-elementos.addEventListener("click",()=>{agregarTexto(formularioElementos)});
+elementos.addEventListener("change",()=>{agregarTexto(formularioElementos)});
 
 
 
