@@ -4,7 +4,6 @@ export function agregarTexto(){
     if(elementos.value === "1"){
         let parrafoTierra = document.createElement("p");
         console.log("este elemento es tierra")
-        // parrafoTierra.innerHTML = "Los signos de tierra son pasivos y fríos, y se caracterizan por ser los más resistentes de todos. Gozan de un temperamento tranquilo y carácter un tanto introvertido. Suelen ser trabajadores, perseverantes y esforzarse al máximo en todo lo que hacen."
         parrafoTierra.innerHTML = `
         <div class="row g-0">
           <div class="col-md-4">
