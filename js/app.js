@@ -138,10 +138,5 @@ function fechaNacimiento(e){
             }
         break;
     }
-
-
-
-
-
 }
 
