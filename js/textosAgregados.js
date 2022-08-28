@@ -2,6 +2,7 @@ let sectionPadre = document.getElementById("agregandoTexto");
 
 export function agregarTexto() {
   if (elementos.value === "1") {
+    sectionPadre.removeChild(sectionPadre.children[0]);
     let parrafoTierra = document.createElement("p");
     console.log("este elemento es tierra");
     parrafoTierra.innerHTML = `
