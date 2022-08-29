@@ -17,7 +17,7 @@ let botonNacimiento = document.getElementById("btnFechaNacimiento");
 let formularioElementos = document.getElementById("formElementos");
 let fecNac = document.getElementById("fecNac");
 let elementos = document.getElementById("elementos");
-
+let padreFechaNac = document.getElementById("padreFechaNac");
 
 botonNacimiento.addEventListener("click", fechaNacimiento);
 elementos.addEventListener("change",()=>{validarElemento(elementos)});
@@ -54,6 +54,11 @@ function fechaNacimiento(e){
         case "01":
             if(dia<=19){
                 console.log("Pertence a capricornio")
+                let parrafoCapricornio = document.createElement('p')
+                parrafoCapricornio.innerHTML = `<div class="row g-0">
+                <div class="col-md-8"><div class="card-body"><h5 class="card-title display-6">Perteneces a Capricornio</h5></div></div>`;
+                parrafoCapricornio.className ='lead my-4';
+                padreFechaNac.appendChild(parrafoCapricornio)
             }else{
                 console.log("Pertenece a acuario")
             }
