@@ -1,5 +1,19 @@
-import {validarElemento} from "./validaciones.js"
-import {agregarTexto} from "./textosAgregados.js"
+import { validarElemento } from "./validaciones.js";
+import { agregarTexto } from "./textosAgregados.js";
+import {
+  agregarTextoAries,
+  agregarTextoTauro,
+  agregarTextoGeminis,
+  agregarTextoLibra,
+  agregarTextoCancer,
+  agregarTextoLeo,
+  agregarTextoVirgo,
+  agregarTextoEscorpio,
+  agregarTextoSagitario,
+  agregarTextoCapricornio,
+  agregarTextoAcuario,
+  agregarTextoPiscis
+} from "./textosSignos.js";
 
 let aries = document.getElementById("aries");
 let tauro = document.getElementById("tauro");
@@ -20,30 +34,56 @@ let elementos = document.getElementById("elementos");
 let padreFechaNac = document.getElementById("padreFechaNac");
 
 botonNacimiento.addEventListener("click", fechaNacimiento);
-elementos.addEventListener("change",()=>{validarElemento(elementos)});
-elementos.addEventListener("change",()=>{agregarTexto(formularioElementos)});
-
+elementos.addEventListener("change", () => {
+  validarElemento(elementos);
+});
+elementos.addEventListener("change", () => {
+  agregarTexto(formularioElementos);
+});
+aries.addEventListener("click", () => {
+  agregarTextoAries(aries);
+});
+tauro.addEventListener("click", () => {
+  agregarTextoTauro(tauro);
+});
+geminis.addEventListener("click", () => {
+  agregarTextoGeminis(geminis);
+});
+cancer.addEventListener("click", () => {
+  agregarTextoCancer(cancer);
+});
+leo.addEventListener("click", () => {
+  agregarTextoLeo(leo);
+});
+virgo.addEventListener("click", () => {
+  agregarTextoVirgo(virgo);
+});
+libra.addEventListener("click", () => {
+  agregarTextoLibra(libra);
+});
+escorpio.addEventListener("click", () => {
+  agregarTextoEscorpio(escorpio);
+});
+sagitario.addEventListener("click", () => {
+  agregarTextoSagitario(sagitario);
+});
+capricornio.addEventListener("click", () => {
+  agregarTextoCapricornio(capricornio);
+});
+acuario.addEventListener("click", () => {
+    agregarTextoAcuario(acuario);
+  });
+  piscis.addEventListener("click", () => {
+    agregarTextoPiscis(piscis);
+  });
 
 
 //se vienen las funciones
-// Aries (21 de marzo al 19 de abril)
-// Tauro (20 de abril al 20 de mayo)
-// Géminis (21 de mayo al 20 de junio)
-// Cáncer (21 de junio al 22 de julio)
-// Leo (23 de julio al 22 de agosto)
-// Virgo (23 de agosto al 22 de septiembre)
-// Libra (23 de septiembre al 22 de octubre)
-// Escorpio (23 de octubre al 21 de noviembre)
-// Sagitario (22 de noviembre al 21 de diciembre)
-// Capricornio (22 de diciembre al 19 de enero)
-// Tú20:18
-// Acuario (20 de enero al 18 de febrero)
-// Piscis (19 de febrero al 20 de marzo)
 
-function fechaNacimiento(e){
-    e.preventDefault()
-    let fechita = fecNac.value;
-    console.log(fechita);
+function fechaNacimiento(e) {
+  e.preventDefault();
+  let fechita = fecNac.value;
+  console.log(fechita);
 
     let fechas = fechita.split("-", 3); 
     console.log(fechas);
@@ -142,4 +182,3 @@ function fechaNacimiento(e){
         break;
     }
 }
-
