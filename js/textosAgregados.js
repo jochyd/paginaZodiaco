@@ -2,7 +2,9 @@ let sectionPadre = document.getElementById("agregandoTexto");
 
 export function agregarTexto() {
   if (elementos.value === "1") {
+
     sectionPadre.removeChild(sectionPadre.children[0]);
+
     let parrafoTierra = document.createElement("p");
     console.log("este elemento es tierra");
     parrafoTierra.innerHTML = `
@@ -77,10 +79,10 @@ export function agregarTexto() {
     parrafoAire.className = "lead my-4";
     sectionPadre.prepend(parrafoAire);
   }
+
 }
 
-// export function removerHijo(){
-//   if(sectionPadre.children < 0){
-//     sectionPadre.removeChild(children[0])
-//   }
-// }
+
+
+
+

@@ -32,13 +32,14 @@ let formularioElementos = document.getElementById("formElementos");
 let fecNac = document.getElementById("fecNac");
 let elementos = document.getElementById("elementos");
 let padreFechaNac = document.getElementById("padreFechaNac");
+let formularioSignos = document.getElementById('formularioSignos');
 
 botonNacimiento.addEventListener("click", fechaNacimiento);
 elementos.addEventListener("change", () => {
   validarElemento(elementos);
 });
 elementos.addEventListener("change", () => {
-  agregarTexto(formularioElementos);
+  agregarTexto(formularioElementos)
 });
 aries.addEventListener("click", () => {
   agregarTextoAries(aries);
@@ -87,6 +88,9 @@ function fechaNacimiento(e) {
 
   let mes = fechas[1];
   let dia = parseInt(fechas[2]);
+  
+  resetearFormulario();
+
   switch (mes) {
     case "01":
       if (dia <= 19) {
@@ -414,4 +418,8 @@ function fechaNacimiento(e) {
       }
       break;
   }
+}
+
+function resetearFormulario(){
+    formularioSignos.reset();
 }
