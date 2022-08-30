@@ -90,6 +90,7 @@ function fechaNacimiento(e) {
   switch (mes) {
     case "01":
       if (dia <= 19) {
+        padreFechaNac.removeChild(padreFechaNac.lastChild);
         let parrafoCapricornio = document.createElement("p");
         parrafoCapricornio.innerHTML = `<div class="card border-warning">
                 <div class="card-body">
@@ -101,6 +102,7 @@ function fechaNacimiento(e) {
         parrafoCapricornio.className = "lead my-4";
         padreFechaNac.appendChild(parrafoCapricornio);
       } else {
+        padreFechaNac.removeChild(padreFechaNac.lastChild);
         let parrafoAcuario = document.createElement("p");
         parrafoAcuario.innerHTML = `<div class="card border-warning">
                 <div class="card-body">
@@ -116,6 +118,7 @@ function fechaNacimiento(e) {
       break;
     case "02":
       if (dia <= 18) {
+        padreFechaNac.removeChild(padreFechaNac.lastChild);
         let parrafoAcuario = document.createElement("p");
         parrafoAcuario.innerHTML = `<div class="card border-warning">
                 <div class="card-body">
@@ -127,6 +130,7 @@ function fechaNacimiento(e) {
         parrafoAcuario.className = "lead my-4";
         padreFechaNac.appendChild(parrafoAcuario);
       } else {
+        padreFechaNac.removeChild(padreFechaNac.lastChild);
         let parrafoPiscis = document.createElement("p");
         parrafoPiscis.innerHTML = `<div class="card border-warning">
                 <div class="card-body">
@@ -141,6 +145,7 @@ function fechaNacimiento(e) {
       break;
     case "03":
       if (dia <= 20) {
+        padreFechaNac.removeChild(padreFechaNac.lastChild);
         let parrafoPiscis = document.createElement("p");
         parrafoPiscis.innerHTML = `<div class="card border-warning">
                 <div class="card-body">
@@ -152,6 +157,7 @@ function fechaNacimiento(e) {
         parrafoPiscis.className = "lead my-4";
         padreFechaNac.appendChild(parrafoPiscis);
       } else {
+        padreFechaNac.removeChild(padreFechaNac.lastChild);
         let parrafoAries = document.createElement("p");
         parrafoAries.innerHTML = `<div class="card border-warning">
                 <div class="card-body">
@@ -166,6 +172,7 @@ function fechaNacimiento(e) {
       break;
     case "04":
       if (dia <= 19) {
+        padreFechaNac.removeChild(padreFechaNac.lastChild);
         let parrafoAries = document.createElement("p");
         parrafoAries.innerHTML = `<div class="card border-warning">
                 <div class="card-body">
@@ -177,6 +184,7 @@ function fechaNacimiento(e) {
         parrafoAries.className = "lead my-4";
         padreFechaNac.appendChild(parrafoAries);
       } else {
+        padreFechaNac.removeChild(padreFechaNac.lastChild);
         let parrafoTauro = document.createElement("p");
         parrafoTauro.innerHTML = `<div class="card border-warning">
                 <div class="card-body">
@@ -191,6 +199,7 @@ function fechaNacimiento(e) {
       break;
     case "05":
       if (dia <= 20) {
+        padreFechaNac.removeChild(padreFechaNac.lastChild);
         let parrafoTauro = document.createElement("p");
         parrafoTauro.innerHTML = `<div class="card border-warning">
                 <div class="card-body">
@@ -202,6 +211,7 @@ function fechaNacimiento(e) {
         parrafoTauro.className = "lead my-4";
         padreFechaNac.appendChild(parrafoTauro);
       } else {
+        padreFechaNac.removeChild(padreFechaNac.lastChild);
         let parrafoGeminis = document.createElement("p");
         parrafoGeminis.innerHTML = `<div class="card border-warning">
                 <div class="card-body">
@@ -216,6 +226,7 @@ function fechaNacimiento(e) {
       break;
     case "06":
       if (dia <= 20) {
+        padreFechaNac.removeChild(padreFechaNac.lastChild);
         let parrafoGeminis = document.createElement("p");
         parrafoGeminis.innerHTML = `<div class="card border-warning">
                 <div class="card-body">
@@ -227,6 +238,7 @@ function fechaNacimiento(e) {
         parrafoGeminis.className = "lead my-4";
         padreFechaNac.appendChild(parrafoGeminis);
       } else {
+        padreFechaNac.removeChild(padreFechaNac.lastChild);
         let parrafoCancer = document.createElement("p");
         parrafoCancer.innerHTML = `<div class="card border-warning">
                 <div class="card-body">
@@ -241,6 +253,7 @@ function fechaNacimiento(e) {
       break;
     case "07":
       if (dia <= 22) {
+        padreFechaNac.removeChild(padreFechaNac.lastChild);
         let parrafoCancer = document.createElement("p");
         parrafoCancer.innerHTML = `<div class="card border-warning">
                 <div class="card-body">
@@ -252,6 +265,7 @@ function fechaNacimiento(e) {
         parrafoCancer.className = "lead my-4";
         padreFechaNac.appendChild(parrafoCancer);
       } else {
+        padreFechaNac.removeChild(padreFechaNac.lastChild);
         let parrafoLeo = document.createElement("p");
         parrafoLeo.innerHTML = `<div class="card border-warning">
                 <div class="card-body">
@@ -266,6 +280,7 @@ function fechaNacimiento(e) {
       break;
     case "08":
       if (dia <= 22) {
+        padreFechaNac.removeChild(padreFechaNac.lastChild);
         let parrafoLeo = document.createElement("p");
         parrafoLeo.innerHTML = `<div class="card border-warning">
                 <div class="card-body">
@@ -277,6 +292,7 @@ function fechaNacimiento(e) {
         parrafoLeo.className = "lead my-4";
         parrafoLeo.appendChild(parrafoLeo);
       } else {
+        padreFechaNac.removeChild(padreFechaNac.lastChild);
         let parrafoVirgo = document.createElement("p");
         parrafoVirgo.innerHTML = `<div class="card border-warning">
                 <div class="card-body">
@@ -291,6 +307,7 @@ function fechaNacimiento(e) {
       break;
     case "09":
       if (dia <= 22) {
+        padreFechaNac.removeChild(padreFechaNac.lastChild);
         let parrafoVirgo = document.createElement("p");
         parrafoVirgo.innerHTML = `<div class="card border-warning">
                 <div class="card-body">
@@ -302,6 +319,7 @@ function fechaNacimiento(e) {
         parrafoVirgo.className = "lead my-4";
          parrafoVirgo.appendChild(parrafoVirgo);
       } else {
+        padreFechaNac.removeChild(padreFechaNac.lastChild);
         let parrafoLibra = document.createElement("p");
         parrafoLibra.innerHTML = `<div class="card border-warning">
                 <div class="card-body">
@@ -316,6 +334,7 @@ function fechaNacimiento(e) {
       break;
     case "10":
       if (dia <= 22) {
+        padreFechaNac.removeChild(padreFechaNac.lastChild);
         let parrafoLibra = document.createElement("p");
         parrafoLibra.innerHTML = `<div class="card border-warning">
                 <div class="card-body">
@@ -327,6 +346,7 @@ function fechaNacimiento(e) {
       parrafoLibra.className = "lead my-4";
       parrafoLibra.appendChild(parrafoLibra);
       } else {
+        padreFechaNac.removeChild(padreFechaNac.lastChild);
         let parrafoEscorpio = document.createElement("p");
         parrafoEscorpio.innerHTML = `<div class="card border-warning">
                 <div class="card-body">
@@ -341,6 +361,7 @@ function fechaNacimiento(e) {
       break;
     case "11":
       if (dia <= 21) {
+        padreFechaNac.removeChild(padreFechaNac.lastChild);
         let parrafoEscorpio = document.createElement("p");
         parrafoEscorpio.innerHTML = `<div class="card border-warning">
                 <div class="card-body">
@@ -352,6 +373,7 @@ function fechaNacimiento(e) {
       parrafoEscorpio.className = "lead my-4";
       parrafoEscorpio.appendChild(parrafoEscorpio);
       } else {
+        padreFechaNac.removeChild(padreFechaNac.lastChild);
         let parrafoSagitario = document.createElement("p");
         parrafoSagitario.innerHTML = `<div class="card border-warning">
                 <div class="card-body">
@@ -366,6 +388,7 @@ function fechaNacimiento(e) {
       break;
     case "12":
       if (dia <= 22) {
+        padreFechaNac.removeChild(padreFechaNac.lastChild);
         let parrafoSagitario = document.createElement("p");
         parrafoSagitario.innerHTML = `<div class="card border-warning">
                 <div class="card-body">
@@ -377,6 +400,7 @@ function fechaNacimiento(e) {
       parrafoSagitario.className = "lead my-4";
       parrafoSagitario.appendChild(parrafoSagitario);
       } else {
+        padreFechaNac.removeChild(padreFechaNac.lastChild);
         let parrafoCapricornio = document.createElement("p");
         parrafoCapricornio.innerHTML = `<div class="card border-warning">
                 <div class="card-body">
