@@ -63,8 +63,7 @@ export function agregarTextoGeminis(){
         let parrafoGeminis = document.createElement('div');
         parrafoGeminis.innerHTML = ` <div class="card border-warning">
         <div class="card-body">
-        Tauro está bien enraizado en Tierra fértil y dadora de seguridad. Protege y lucha por lo que es suyo, ya sean bienes materiales o vínculos afectivos. Llega a ser posesivo y testarudo al respecto. Persigue el bienestar material y la estabilidad emocional.
-        </div>
+        Géminis es etéreo y volátil como su elemento, tanto que a veces parece un eterno adolescente. Su mente está constantemente volando en reflexiones y búsqueda de conocimiento, por eso cambia constantemente y puede desconcertar a quienes lo rodean.</div>
       </div>`;
         parrafoGeminis.className = 'my-4 fw-semibold fs-4 text-dark cardbody-red'
         padreSignos.appendChild(parrafoGeminis);
